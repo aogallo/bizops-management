@@ -47,14 +47,5 @@
     "typescript-eslint": "^8.45.0",
     "vite": "latest",
     "vitest": "^4.0.0"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "eslint --fix",
-      "prettier --ignore-unknown --write"
-    ],
-    "*.{css,md,json}": [
-      "prettier --write"
-    ]
   }
 }
