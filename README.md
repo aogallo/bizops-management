@@ -96,7 +96,6 @@ The app will be available at `http://localhost:5173`
 ## 📜 Available Scripts
 
 - `npm run dev` - Start development server
-- `npm run dev:mock` - Start dev server with API mocking enabled
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
@@ -167,26 +166,11 @@ function ProductList() {
 
 ## 🎭 API Mocking with MSW
 
-The project uses [Mock Service Worker (MSW)](https://mswjs.io/) for API mocking in both tests and development.
-
-### Enable Mocking in Development
-
-Run with mocked API:
-
-```bash
-npm run dev:mock
-```
-
-Or set environment variable:
-
-```bash
-# .env
-VITE_ENABLE_API_MOCKING=true
-```
+The project uses [Mock Service Worker (MSW)](https://mswjs.io/) for API mocking in tests.
 
 ### Automatic Mocking in Tests
 
-All tests automatically use mocked API responses. No configuration needed!
+All tests automatically use mocked API responses powered by MSW. No configuration needed!
 
 ### Mock Data
 

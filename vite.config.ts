@@ -9,5 +9,6 @@ export default defineConfig(({ mode }) => ({
     globals: true,
     environment: "jsdom",
     env: loadEnv(mode, process.cwd(), ""),
+    setupFiles: "./src/tests/setup.ts",
   },
 }));
