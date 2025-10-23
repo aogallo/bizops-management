@@ -7,4 +7,5 @@ export default {
   useTabs: false,
   arrowParens: "always",
   endOfLine: "lf",
+  jsxSingleQuote: false,
 };
