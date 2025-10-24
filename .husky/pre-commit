@@ -1,3 +1,5 @@
 # .husky/pre-commit
 
-npx lint-staged
+bash << EOF
+npx lint-staged --config .lintstagedrc.js
+EOF
